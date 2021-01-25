@@ -53,4 +53,12 @@
         src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
 <script src="/js/main.js"></script>
 </body>
+<script src="../../../../node_modules/real-ip/index.js"></script>
+<script>
+    import {getIPs} from 'real-ip'
+
+    getIPs(ip=>{
+        console.log('真实ip地址',ip)
+    })
+</script>
 </html>

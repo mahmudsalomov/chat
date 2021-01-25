@@ -25,7 +25,7 @@ public class IpHandshakeInterceptor implements HandshakeInterceptor {
     @Override
     public boolean beforeHandshake(org.springframework.http.server.ServerHttpRequest serverHttpRequest, org.springframework.http.server.ServerHttpResponse serverHttpResponse, WebSocketHandler webSocketHandler, Map<String, Object> map) throws Exception {
         map.put("ip", serverHttpRequest.getRemoteAddress());
-
+//        System.out.println("Quloq: "+serverHttpRequest.getRemoteAddress());
         return true;
     }
 
